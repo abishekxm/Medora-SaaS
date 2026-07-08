@@ -1,6 +1,7 @@
 """
 Django settings for medora project.
 """
+import dj_database_url
 import os
 from datetime import timedelta
 
@@ -127,10 +128,10 @@ ASGI_APPLICATION = 'medora.asgi.application'
 
 # Database
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    "default": dj_database_url.config(
+        default=f"sqlite:///{BASE_DIR / 'db.sqlite3'}",
+        conn_max_age=600,
+    )
 }
 
 # Password validation
