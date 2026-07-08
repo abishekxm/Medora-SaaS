@@ -1,0 +1,12 @@
+college_name,state,category,quota,cutoff_score,fees,type
+Madras Medical College,Tamil Nadu,General,AIQ,680,18000,Government
+Madras Medical College,Tamil Nadu,OBC,AIQ,660,18000,Government
+Madras Medical College,Tamil Nadu,SC,AIQ,610,18000,Government
+Stanley Medical College,Tamil Nadu,General,AIQ,670,18000,Government
+Stanley Medical College,Tamil Nadu,OBC,AIQ,650,18000,Government
+Kilpauk Medical College,Tamil Nadu,General,AIQ,665,18000,Government
+Madurai Medical College,Tamil Nadu,OBC,AIQ,640,18000,Government
+Coimbatore Medical College,Tamil Nadu,OBC,AIQ,635,18000,Government
+CMC Vellore,Tamil Nadu,General,Management,620,500000,Private
+SRM Medical College,Tamil Nadu,General,Management,580,2500000,Private
+Saveetha Medical College,Tamil Nadu,General,Management,570,2400000,Private
