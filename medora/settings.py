@@ -6,13 +6,12 @@ import os
 from datetime import timedelta
 
 SIMPLE_JWT = {
-    "ACCESS_TOKEN_LIFETIME": timedelta(hours=12),
-    "REFRESH_TOKEN_LIFETIME": timedelta(days=7),
+    "ACCESS_TOKEN_LIFETIME": timedelta(hours=24),
+    "REFRESH_TOKEN_LIFETIME": timedelta(days=30),
 }
 
 
 from pathlib import Path
-import os
 from dotenv import load_dotenv
 
 # Load environment variables from .env file
@@ -50,14 +49,6 @@ REST_FRAMEWORK = {
         "rest_framework.permissions.IsAuthenticated",
     ),
 }
-
-from datetime import timedelta
-
-SIMPLE_JWT = {
-    "ACCESS_TOKEN_LIFETIME": timedelta(hours=24),
-    "REFRESH_TOKEN_LIFETIME": timedelta(days=30),
-}
-
 
 # Application definition
 INSTALLED_APPS = [
@@ -164,3 +155,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # CORS configuration for Medora Client
 CORS_ALLOW_ALL_ORIGINS = True  # For dev. Restrict in prod!
+CSRF_TRUSTED_ORIGINS = [
+    "https://medora-frontend-bsa6oakq9-abishekxm6-7866s-projects.vercel.app",
+]
