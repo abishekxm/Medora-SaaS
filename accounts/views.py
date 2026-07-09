@@ -104,3 +104,11 @@ class PasswordResetConfirmView(APIView):
             serializer.errors,
             status=status.HTTP_400_BAD_REQUEST,
         )
+class RegisterView(generics.CreateAPIView):
+    queryset = User.objects.all()
+    serializer_class = RegisterSerializer
+    permission_classes = (AllowAny,)
+
+    def post(self, request, *args, **kwargs):
+        print("REGISTER REQUEST:", request.data)
+        return super().post(request, *args, **kwargs)
