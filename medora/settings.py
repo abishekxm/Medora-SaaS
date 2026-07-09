@@ -37,9 +37,7 @@ RAZORPAY_KEY_SECRET = os.getenv("RAZORPAY_KEY_SECRET")
 DEBUG = os.getenv('DEBUG', 'True') == 'True'
 
 ALLOWED_HOSTS = [
-    "127.0.0.1",
-    "localhost",
-    ".onrender.com",
+    "*",
 ]
 
 REST_FRAMEWORK = {
