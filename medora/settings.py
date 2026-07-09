@@ -156,5 +156,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # CORS configuration for Medora Client
 CORS_ALLOW_ALL_ORIGINS = True  # For dev. Restrict in prod!
 CSRF_TRUSTED_ORIGINS = [
-    "https://medora-frontend-bsa6oakq9-abishekxm6-7866s-projects.vercel.app",
+    "https://medora-saas-flax.vercel.app",
 ]
