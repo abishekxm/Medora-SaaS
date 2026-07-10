@@ -6,7 +6,7 @@
 
 ## 🚀 Live Demo
 
-🌐 Frontend: https://YOUR-VERCEL-URL.vercel.app
+🌐 Frontend: https://medora-frontend-apyvla9if-abishekxm6-7866s-projects.vercel.app
 
 ⚙️ Backend API: https://medora-saas.onrender.com
 
