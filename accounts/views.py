@@ -112,3 +112,18 @@ class RegisterView(generics.CreateAPIView):
     def post(self, request, *args, **kwargs):
         print("REGISTER REQUEST:", request.data)
         return super().post(request, *args, **kwargs)
+    
+from django.contrib.auth.models import User
+from django.http import JsonResponse
+
+def create_admin(request):
+    if User.objects.filter(username="admin").exists():
+        return JsonResponse({"message": "Admin already exists"})
+
+    User.objects.create_superuser(
+        username="admin",
+        email="admin@example.com",
+        password="Admin@123"
+    )
+
+    return JsonResponse({"message": "Admin created successfully"})
